@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple App</title>
+</head>
+<body>
+    <h1>Submit a Message</h1>
+    <form action="submit.php" method="post">
+        <textarea name="message" rows="4" cols="50" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Messages</h2>
+    <div id="messages">
+        <?php include 'view.php'; ?>
+    </div>
+</body>
+</html>
